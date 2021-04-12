@@ -8,7 +8,7 @@ Repo para probar distintas API's que me entreguen la metereología de una zona d
 
 ```sh
 │   .gitignore
-│   keys.json  --> archivo que solo esta en local con las api keys
+│   keys.json  --> archivo que solo esta en local con las api keys, inscribete en las paginas si quieres api keys xdd
 │   README.md
 │
 ├───apis
