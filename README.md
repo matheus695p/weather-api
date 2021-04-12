@@ -31,7 +31,7 @@ Hay que hacer una cuenta (capa gratuita), entrega 1000 request por mes y lo buen
 Ejemplo de un request para santiago:
 
 
-```yaml
+```rust
 {
    "request":{
       "type":"City",
@@ -77,7 +77,7 @@ Ejemplo de un request para santiago:
 
 Ejemplo de un request para minera candelaria en tierra amarilla:
 
-```yaml
+```rust
 {
    "request":{
       "type":"City",
