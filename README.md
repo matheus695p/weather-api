@@ -11,14 +11,20 @@ Repo para probar distintas API's que me entreguen la meteorología de una zona d
 
 ```sh
 │   .gitignore
-│   keys.json  --> archivo que solo esta en local con las api keys, inscribete en las paginas si quieres api keys xdd
+│   keys.json
 │   README.md
 │
 ├───apis
+│       scrapper.py
 │       weatherstack.py
 │
-└───images
-        weatherstack.png
+├───images
+│       scrapper.png
+│       weatherstack.png
+│
+└───src
+        scraper_module.py
+        __init__.py
 ```
 
 # 1) Weatherstack
@@ -124,6 +130,62 @@ Ejemplo de un request para minera candelaria en tierra amarilla:
 }
 
 ```
+
+# 2) Scraper (La vieja confiable)
+
+Preguntando a google también se puede sacar info metereologíca de manera gratuita
+
+
+```sh
+├───apis
+│       scrapper.py  ---> Ejemplo del scraper
+└───src
+        scraper_module.py --> Modulo
+        __init__.py
+```
+
+La salida de este scraper es bastante buena, falta agregar más cosas como humedad y viento, pero para más adelante cuando sea necesario.
+
+
+```rust
+{
+   "ciudad":{
+      "0":"Santiago de Chile",
+      "1":"Tierra Amarilla Chile",
+      "2":"Coquimbo Chile",
+      "3":"Magallanes Chile",
+      "4":"Isla de Pascua Chile",
+      "5":"Lima Peru"
+   },
+   "fecha":{
+      "0":"2021-04-12 11:25:39",
+      "1":"2021-04-12 11:25:41",
+      "2":"2021-04-12 11:25:43",
+      "3":"2021-04-12 11:25:45",
+      "4":"2021-04-12 11:25:47",
+      "5":"2021-04-12 11:25:50"
+   },
+   "temperatura":{
+      "0":"22°C",
+      "1":"27°C",
+      "2":"14°C",
+      "3":"9°C",
+      "4":"22°C",
+      "5":"23°C"
+   },
+   "comentario":{
+      "0":"Mayormente soleado",
+      "1":"Soleado",
+      "2":"Parcialmente nublado",
+      "3":"Mayormente soleado",
+      "4":"Parcialmente nublado",
+      "5":"Mayormente soleado"
+   }
+```
+
+<p align="center">
+  <img src="./images/scrapper.png">
+</p>
 
 
 # Bibliografía
