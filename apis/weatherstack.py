@@ -10,7 +10,7 @@ with open('keys.json') as json_file:
 # params del request
 params = {
     'access_key': YOUR_ACCESS_KEY,
-    'query': 'Santiago'
+    'query': 'Tierra Amarilla Chile'
 }
 # consulta
 api_result = requests.get('http://api.weatherstack.com/current', params)
