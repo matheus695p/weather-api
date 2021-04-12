@@ -28,6 +28,9 @@ Repo para probar distintas API's que me entreguen la metereología de una zona d
 Hay que hacer una cuenta (capa gratuita), entrega 1000 request por mes y lo bueno es que te entrega varios datos climaticos como, descripciones del clima, inclinación del viento, presión atmosferica, precipitaciones, humedad, oclusión en nubes, indice de rayos uv, visibilidad, velocidad del viento, etc. Bien completa la API, pagando 5 dolares al mes, tienes 50000 requests y acceso a info historica. 
 
 
+Ejemplo de un request para santiago:
+
+
 ```yaml
 {
    "request":{
@@ -71,6 +74,54 @@ Hay que hacer una cuenta (capa gratuita), entrega 1000 request por mes y lo buen
    }
 }
 ```
+
+Ejemplo de un request para minera candelaria en tierra amarilla:
+
+```yaml
+{
+   "request":{
+      "type":"City",
+      "query":"Tierra Amarilla, Chile",
+      "language":"en",
+      "unit":"m"
+   },
+   "location":{
+      "name":"Tierra Amarilla",
+      "country":"Chile",
+      "region":"Atacama",
+      "lat":"-27.483",
+      "lon":"-70.283",
+      "timezone_id":"America/Santiago",
+      "localtime":"2021-04-11 22:59",
+      "localtime_epoch":1618181940,
+      "utc_offset":"-4.0"
+   },
+   "current":{
+      "observation_time":"02:59 AM",
+      "temperature":12,
+      "weather_code":113,
+      "weather_icons":[
+         "https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0008_clear_sky_night.png"
+      ],
+      "weather_descriptions":[
+         "Clear"
+      ],
+      "wind_speed":7,
+      "wind_degree":100,
+      "wind_dir":"E",
+      "pressure":1014,
+      "precip":0,
+      "humidity":82,
+      "cloudcover":0,
+      "feelslike":12,
+      "uv_index":1,
+      "visibility":9,
+      "is_day":"no"
+   }
+}
+
+```
+
 
 # Bibliografía
 
