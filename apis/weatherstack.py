@@ -5,7 +5,6 @@ import requests
 with open('keys.json') as json_file:
     dict_ = json.load(json_file)
     YOUR_ACCESS_KEY = dict_["weatherstack"]
-    print(YOUR_ACCESS_KEY)
 
 # params del request
 params = {
