@@ -2,7 +2,8 @@
 
 #  Weather API's requests
 
-Repo para probar distintas API's que me entreguen la metereología de una zona del país.
+Repo para probar distintas API's que me entreguen la meteorología de una zona del país.
+
 
 # Tree
 
@@ -18,7 +19,7 @@ Repo para probar distintas API's que me entreguen la metereología de una zona d
         weatherstack.png
 ```
 
-# Weatherstack
+# 1) Weatherstack
 
 <p align="center">
   <img src="./images/weatherstack.png">
